@@ -10,14 +10,15 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Contact_App")
+@Table(name = "Contact")
 @Component
 public class MyEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
-    private String Name;
-    private String Number;
+    private String name;
+    private String phone;
+    private String city;
 
 }
